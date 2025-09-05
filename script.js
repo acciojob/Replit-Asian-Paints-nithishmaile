@@ -1,6 +1,7 @@
 //your JS code here. If required.//your JS code here. If required.
 const formElement=document.getElementById("color-box");
-let allBoxes=document.querySelectorAll(".grid-items")
+let allBoxes=document.querySelectorAll(".grid-item");
+let resetButton=document.getElementById("Reset");
 
 formElement.addEventListener("submit",(event)=>{
 	event.preventDefault();
@@ -12,6 +13,7 @@ formElement.addEventListener("submit",(event)=>{
 	event.target.reset();
 })
 
+resetButton.addEventListener("click",resetTheColor);
 
 function resetTheColor(){
 	for(let box of allBoxes){
