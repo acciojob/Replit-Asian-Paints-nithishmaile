@@ -1,7 +1,7 @@
 //your JS code here. If required.//your JS code here. If required.
 const formElement=document.getElementById("color-box");
 let allBoxes=document.querySelectorAll(".grid-item");
-let resetButton=document.getElementById("Reset");
+let resetButton=document.getElementById("reset_button");
 
 formElement.addEventListener("submit",(event)=>{
 	event.preventDefault();
